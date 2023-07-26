@@ -1,12 +1,12 @@
 import { BiTimeFive } from "react-icons/bi";
-import logo1 from "../../Assets/logo1.png";
-import logo2 from "../../Assets/logo2.png";
-import logo3 from "../../Assets/logo3.png";
-import logo5 from "../../Assets/logo5.png";
-import logo6 from "../../Assets/logo6.png";
-import logo7 from "../../Assets/logo7.png";
-import logo8 from "../../Assets/logo8.png";
-import microsoft from "../../Assets/windows.png";
+import logo1 from "../Assets/logo1.png";
+import logo2 from "../Assets/logo2.png";
+import logo3 from "../Assets/logo3.png";
+import logo5 from "../Assets/logo5.png";
+import logo6 from "../Assets/logo6.png";
+import logo7 from "../Assets/logo7.png";
+import logo8 from "../Assets/logo8.png";
+import microsoft from "../Assets/windows.png";
 const Data = [
     {
     id:1,
@@ -89,6 +89,28 @@ const Data = [
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,laboriosam!',
         company: 'WhatsApp'
                         
+    },
+    {
+        id:5,
+        img: logo5,
+        title: 'Manager',
+        time: 'Now',
+        location: 'India',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,laboriosam!',
+        company: 'State Bank Of India'
+        
+
+
+    },
+    {
+        id:7,
+        img: logo7,
+        title: 'UI Designer',
+        time: 'Now',
+        location: 'Japan',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,laboriosam!',
+        company: 'StarBucks'
+                
     } 
     
 ]
@@ -118,8 +140,7 @@ const Job = () => {
                                   <span className='text-[14px] py-[1rem] block group-hover:text-white'>{company}</span>
                               </div>
                               <button className='border-[2px] rounded-[10px] block p-[10px] w-full text[14px] font-semibold text-textColor hover: bg-white group-hover/item:text-textColorgroup-hover:text-white'>
-                                  {/* <a href="/Apply">Apply Now</a> */}
-                                  Apply Now
+                                <a href="/Apply">Apply Now</a>
                                 </button>
                           </div>
                       )
